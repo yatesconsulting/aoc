@@ -18,8 +18,8 @@ SET /A defday = 100%date:~7,2% %% 100 + 1
 set /p day=Year=%year%; Please enter day [%defday%] || set /a day=%defday%
 
 :setfromuserskip
-
 set baseloc=\Users\15759\OneDrive - Roswell Independent School District\Documents\GitHub\aoc
 echo curl -b "session=%session%" -o "%baseloc%\%year%\%day%.txt" "https://adventofcode.com/%year%/day/%day%/input"
 curl -b "session=%session%" -o "%baseloc%\%year%\%day%.txt" "https://adventofcode.com/%year%/day/%day%/input"
+
 pause
